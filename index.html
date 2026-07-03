@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BaRa Logistics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>BaRa Logistics</h1>
+  <p>Çindən Azərbaycana AI ilə sürətli logistika sistemi</p>
+
+  <div class="buttons">
+    <button onclick="scrollToSection('order')">Sifariş et</button>
+    <button onclick="scrollToSection('track')">Tracking</button>
+  </div>
+</header>
+
+<section class="about">
+  <h2>Haqqımızda</h2>
+  <p>BaRa Logistics – Çin və Azərbaycan arasında AI dəstəkli logistika və məhsul sourcing platformasıdır.</p>
+</section>
+
+<section class="services">
+  <h2>Xidmətlər</h2>
+  <ul>
+    <li>📦 Məhsul tapılması (1688 / Alibaba)</li>
+    <li>🏭 Çin anbar xidməti</li>
+    <li>✈️ Hava daşınması</li>
+    <li>🚢 Dəniz daşınması</li>
+    <li>🧾 Gömrük rəsmiləşdirilməsi</li>
+    <li>🏠 Qapıdan qapıya çatdırılma</li>
+  </ul>
+</section>
+
+<section id="track" class="tracking">
+  <h2>📍 Tracking Sistemi</h2>
+  <input type="text" id="trackInput" placeholder="Tracking nömrəsini yaz">
+  <button onclick="trackOrder()">Yoxla</button>
+  <p id="trackResult"></p>
+</section>
+
+<section id="order" class="order">
+  <h2>📩 Sifariş Formu</h2>
+  <input type="text" placeholder="Adınız">
+  <input type="text" placeholder="Məhsul linki">
+  <input type="text" placeholder="WhatsApp nömrə">
+  <button onclick="alert('Sifariş göndərildi!')">Göndər</button>
+</section>
+
+<section class="reviews">
+  <h2>Müştəri Rəyləri ⭐</h2>
+  <p>⭐⭐⭐⭐⭐ “Çox sürətli çatdırıldı!” – Ali</p>
+  <p>⭐⭐⭐⭐⭐ “Etibarlı xidmət.” – Nigar</p>
+  <p>⭐⭐⭐⭐⭐ “Çindən ən ucuz yol budur.” – Samir</p>
+</section>
+
+<section class="ai">
+  <h2>🤖 BaRa AI Assistant</h2>
+  <p>Salam! Mən BaRa AI. Sifariş və logistika barədə kömək edə bilərəm.</p>
+  <button onclick="alert('AI hazırda demo rejimdədir')">Sual ver</button>
+</section>
+
+<footer>
+  <p>© 2026 BaRa Logistics | AZ | EN | RU</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
